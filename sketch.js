@@ -21,6 +21,7 @@ function setup() {
     pMapper = createProjectionMapper(this);
     videos[0] = createVideo('assets/coins2.mp4');
     videos[0].hide();
+    
 
     // dancing queen full screen
     videos[1] = createVideo('assets/swirls.mp4');
@@ -75,6 +76,7 @@ function mousePressed() {
         mode = BLACK_1;
         let fs = fullscreen();
         fullscreen(!fs);
+        playVid();
     }
 }
 
@@ -168,27 +170,27 @@ function displayAbba() {
 }
 
 function triggerVideo() {
-    if (mode == MONEY_MONEY) {
-        playVid(0);
-    }
-    else if (mode == DISCO_1) {
-        playVid(1);
-    }
-    else if (mode == DISCO_2) {
-        playVid(2);
-    }
-    else if (mode == ABBA) {
-        playVid(3);
-    }
+    // if (mode == MONEY_MONEY) {
+    //     playVid(0);
+    // }
+    // else if (mode == DISCO_1) {
+    //     playVid(1);
+    // }
+    // else if (mode == DISCO_2) {
+    //     playVid(2);
+    // }
+    // else if (mode == ABBA) {
+    //     playVid(3);
+    // }
 }
 
 function playVid(num) {
     for (let i = 0; i < videos.length; i++) {
-        if (num == i) {
+        // if (num == i) {
             videos[i].loop();
-        }
-        else {
-            videos[i].pause();
-        }
+        // }
+        // else {
+            // videos[i].pause();
+        // }
     }
 }
