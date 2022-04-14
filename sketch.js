@@ -23,7 +23,7 @@ const BLACK_5 = 9;
 function setup() {
     createCanvas(windowWidth, windowHeight);
     pMapper = createProjectionMapper(this);
-    videos[0] = createVideo('assets/coins.mov');
+    videos[0] = createVideo('assets/coins2.mov');
     videos[0].hide();
     
 
