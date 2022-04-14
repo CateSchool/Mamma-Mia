@@ -1,3 +1,7 @@
+// money money
+// dancing queen 1 = disco spots
+// gimme gimme = floating dots
+// dancing queen 2 = gold ball
 
 let mode = 0;
 let videos = [];
@@ -24,7 +28,7 @@ function setup() {
     
 
     // dancing queen full screen
-    videos[1] = createVideo('assets/swirls.mp4');
+    videos[1] = createVideo('assets/colors.mp4');
     videos[1].hide();
 
     // gimme gimme up top
@@ -32,8 +36,9 @@ function setup() {
     videos[2].hide();
 
     // abba full screen
-    videos[3] = createVideo('assets/pentagon.mp4');
+    videos[3] = createVideo('assets/gold_ball.mp4');
     videos[3].hide();
+    
 
     maskMaps[0] = pMapper.createMaskMap(6);
     maskMaps[1] = pMapper.createMaskMap(6);
@@ -160,7 +165,7 @@ function maskTop() {
 
 function displayGimmeGimme() {
     image(videos[2], 0, 0, width, height);
-    maskTop();
+    // maskTop();
     displayMasks();
 }
 
